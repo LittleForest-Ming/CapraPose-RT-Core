@@ -1,8 +1,8 @@
 # CapraPose-RT Core
 
-This folder is a lightweight public GitHub package for the core CapraPose-RT model skeleton. It is intentionally separated from the full local research repository.
+This folder is a lightweight public package for the core CapraPose-RT model skeleton. 
 
-## What Is Included
+## 
 
 - Canonical 17-keypoint dairy-goat 2D pose schema.
 - Lightweight visual encoder used by the CapraPose-RT pipeline.
@@ -12,14 +12,6 @@ This folder is a lightweight public GitHub package for the core CapraPose-RT mod
 - Topology-consistent structural loss definitions.
 - Minimal random-input forward example.
 - Template config with placeholders instead of private experiment settings.
-
-## What Is Not Included
-
-- No trained weights, checkpoints, `.pt`, `.pth`, or exported engines.
-- No dataset files or private annotation paths.
-- No experiment output directories, logs, metrics, visualizations, or paper tables.
-- No comparison-model training code for YOLO, HRNet, RTMPose-CSPNeXt, ViTPose, GRMPose, or other baselines.
-- No private full decoder implementation. The decoder file in this package is an interface-compatible placeholder.
 
 ## Repository Structure
 
@@ -50,7 +42,7 @@ CapraPose-RT-Core/
 LatentPartAwareHierarchicalDecoder
 ```
 
-It also keeps the expected constructor arguments and forward return structure. However, it only projects features and returns zero-valued placeholder part/joint tokens. This is deliberate: the file marks where the latent part-aware hierarchical decoder belongs without publishing private experiment-specific details.
+It also keeps the expected constructor arguments and forward return structure. However, it only projects features and returns zero-valued placeholder part/joint tokens. 
 
 ## Quick Smoke Test
 
@@ -103,4 +95,3 @@ This package is for understanding and extending the core 2D dairy-goat pose-esti
 3. Adaptive topology refinement.
 4. Topology-consistent structural learning.
 
-It is not a full reproduction bundle for the private paper experiments.
